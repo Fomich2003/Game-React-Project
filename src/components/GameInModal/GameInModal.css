@@ -1,0 +1,365 @@
+.game-in-modal {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+.game-in-modal__header {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.game-in-modal__image-container {
+  flex-shrink: 0;
+}
+
+.game-in-modal__image {
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.game-in-modal__main-info {
+  flex: 1;
+}
+
+.game-in-modal__title {
+  margin: 0 0 12px 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+
+.game-in-modal__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.game-in-modal__release-date,
+.game-in-modal__esrb {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.game-in-modal__esrb {
+  padding: 4px 8px;
+  background: #f0f0f0;
+  border-radius: 6px;
+  display: inline-block;
+  width: fit-content;
+}
+
+/* Stats */
+.game-in-modal__stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.game-in-modal__rating-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.game-in-modal__rating {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.game-in-modal__rating--excellent {
+  background: #d4edda;
+  color: #155724;
+}
+
+.game-in-modal__rating--good {
+  background: #cce5ff;
+  color: #004085;
+}
+
+.game-in-modal__rating--average {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.game-in-modal__rating--poor {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.game-in-modal__rating-value {
+  font-size: 24px;
+}
+
+.game-in-modal__rating-max {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.game-in-modal__rating-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.game-in-modal__reviews-count,
+.game-in-modal__metacritic {
+  font-size: 13px;
+  color: #666;
+}
+
+.game-in-modal__metacritic {
+  font-weight: 600;
+  color: #ff6b35;
+}
+
+.game-in-modal__playtime {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.game-in-modal__playtime-label {
+  font-size: 13px;
+  color: #666;
+}
+
+.game-in-modal__playtime-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Section titles */
+.game-in-modal__section-title {
+  margin: 0 0 16px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 8px;
+}
+
+/* User ratings */
+.game-in-modal__user-ratings {
+  margin-bottom: 24px;
+}
+
+.game-in-modal__ratings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.game-in-modal__rating-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.game-in-modal__rating-title {
+  min-width: 120px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.game-in-modal__rating-bar {
+  flex: 1;
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.game-in-modal__rating-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50, #8BC34A);
+  transition: width 0.3s ease;
+}
+
+.game-in-modal__rating-percent {
+  min-width: 40px;
+  text-align: right;
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+}
+
+/* Tags and labels */
+.game-in-modal__tags,
+.game-in-modal__platforms-list,
+.game-in-modal__stores-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.game-in-modal__tag,
+.game-in-modal__platform,
+.game-in-modal__store {
+  padding: 6px 12px;
+  background: #e9ecef;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #495057;
+  transition: all 0.2s ease;
+}
+
+.game-in-modal__tag:hover,
+.game-in-modal__platform:hover,
+.game-in-modal__store:hover {
+  background: #dee2e6;
+  transform: translateY(-1px);
+}
+
+.game-in-modal__tag--small {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+/* Genres */
+.game-in-modal__genres {
+  margin-bottom: 24px;
+}
+
+.game-in-modal__genres .game-in-modal__tag {
+  background: #007bff;
+  color: white;
+}
+
+.game-in-modal__genres .game-in-modal__tag:hover {
+  background: #0056b3;
+}
+
+/* Platforms */
+.game-in-modal__platforms {
+  margin-bottom: 24px;
+}
+
+.game-in-modal__platform {
+  background: #28a745;
+  color: white;
+}
+
+.game-in-modal__platform:hover {
+  background: #1e7e34;
+}
+
+/* Stores */
+.game-in-modal__stores {
+  margin-bottom: 24px;
+}
+
+.game-in-modal__store {
+  background: #ffc107;
+  color: #212529;
+}
+
+.game-in-modal__store:hover {
+  background: #e0a800;
+}
+
+/* Game tags */
+.game-in-modal__game-tags {
+  margin-bottom: 24px;
+}
+
+/* Screenshots */
+.game-in-modal__screenshots {
+  margin-bottom: 0;
+}
+
+.game-in-modal__screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.game-in-modal__screenshot {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.game-in-modal__screenshot:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  
+  .game-in-modal__header {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .game-in-modal__image {
+    width: 100%;
+    height: 180px;
+  }
+  
+  .game-in-modal__title {
+    font-size: 24px;
+  }
+  
+  .game-in-modal__stats {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+  
+  .game-in-modal__rating-section {
+    justify-content: space-between;
+  }
+  
+  .game-in-modal__playtime {
+    align-items: flex-start;
+  }
+  
+  .game-in-modal__rating-item {
+    gap: 8px;
+  }
+  
+  .game-in-modal__rating-title {
+    min-width: 80px;
+    font-size: 13px;
+  }
+  
+  .game-in-modal__screenshots-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .game-in-modal__screenshots-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .game-in-modal__section-title {
+    font-size: 16px;
+  }
+}
